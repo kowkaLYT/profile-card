@@ -10,13 +10,18 @@ function ProfileTabs({ activeTab, setActiveTab }) {
             {tabs.map(({ id, label }) => (
                 <button
                     key={id}
+                    type="button"
                     onClick={() => setActiveTab(id)}
-                    className={`flex-1 py-3 text-xs font-bold tracking-wide transition-all ${activeTab === id
-                            ? "text-[#FF5C8D] border-t-2 border-[#FF5C8D] bg-[#142030]"
-                            : "text-slate-500 hover:text-[#E9D8C8]"
+                    className={`relative flex-1 py-3 text-xs font-bold tracking-wide transition-all duration-300 cursor-pointer ${activeTab === id
+                            ? "text-[#FF5C8D] bg-[#142030]"
+                            : "text-slate-500 hover:text-[#E9D8C8] hover:bg-[#142030]/50"
                         }`}
                 >
                     {label}
+
+                    {activeTab === id && (
+                        <span className="absolute top-0 left-0 right-0 h-0.5 bg-[#FF5C8D]" />
+                    )}
                 </button>
             ))}
         </div>

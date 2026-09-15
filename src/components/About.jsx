@@ -2,44 +2,44 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 
-function About() {
-    const socialLinks = [
-        {
-            name: "Facebook",
-            url: "https://www.facebook.com/profile.php?id=100022556854946",
-            icon: FaFacebookF,
-        },
-        {
-            name: "GitHub",
-            url: "https://github.com/kowkaLYT",
-            icon: FiGithub,
-        },
-        {
-            name: "Instagram",
-            url: "https://instagram.com/dasha_fedorchenko_",
-            icon: FaInstagram,
-        },
-        {
-            name: "LinkedIn",
-            url: "https://www.linkedin.com/in/dasha-fedorchenko-3b294a290/",
-            icon: FaLinkedinIn,
-        },
-    ];
+const socialLinks = [
+    {
+        name: "Facebook",
+        url: "https://www.facebook.com/profile.php?id=100022556854946",
+        icon: FaFacebookF,
+    },
+    {
+        name: "GitHub",
+        url: "https://github.com/kowkaLYT",
+        icon: FiGithub,
+    },
+    {
+        name: "Instagram",
+        url: "https://instagram.com/dasha_fedorchenko_",
+        icon: FaInstagram,
+    },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/dasha-fedorchenko-3b294a290/",
+        icon: FaLinkedinIn,
+    },
+];
 
+function About() {
     return (
-        <div className="flex flex-col gap-3 my-6">
+        <div className="flex flex-col gap-3">
             <h4 className="font-bold text-[#FF5C8D]">
                 ABOUT
             </h4>
 
-            <p className="text-[#E9D8C8] leading-relaxed">
+            <p className="leading-relaxed text-[#E9D8C8]">
                 Computer Science student passionate about frontend development.
                 I enjoy building interactive and responsive web experiences
                 with React and modern web technologies. Currently learning,
                 building and growing as a developer.
             </p>
 
-            <ul className="flex gap-6 mt-2">
+            <ul className="mt-2 flex gap-6">
                 {socialLinks.map((link) => {
                     const Icon = link.icon;
 
@@ -50,9 +50,9 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={link.name}
-                                className="group flex items-center justify-center w-10 h-10 rounded-full bg-[#1E3442] hover:bg-[#732553] transition-colors"
+                                className="group flex h-10 w-10 items-center justify-center rounded-full bg-[#1E3442] transition-all duration-300 hover:bg-[#732553] hover:shadow-[0_0_18px_rgba(255,92,141,0.25)]"
                             >
-                                <Icon className="w-5 h-5 text-[#E9D8C8] group-hover:text-white transition-colors" />
+                                <Icon className="h-5 w-5 text-[#E9D8C8] transition-all duration-300 group-hover:scale-110 group-hover:text-white" />
                             </a>
                         </li>
                     );

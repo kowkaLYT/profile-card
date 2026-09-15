@@ -1,32 +1,32 @@
+const experiences = [
+    {
+        period: "2023–25",
+        title: "Frontend Developer",
+        company: "Nova DevelopersCO",
+        description:
+            "Built responsive web apps with React, TypeScript and JavaScript.",
+    },
+];
+
+const education = [
+    {
+        period: "2024–28",
+        title: "Computer Science & AI",
+        company: "V. N. Karazin Kharkiv National University",
+    },
+    {
+        period: "2025–26",
+        title: "Level 1 English FS & Maths",
+        company: "Chesterfield College",
+    },
+    {
+        period: "2023",
+        title: "Markup Development",
+        company: "SourceIT",
+    },
+];
+
 function Experience() {
-    const experiences = [
-        {
-            period: "2023–25",
-            title: "Frontend Developer",
-            company: "Nova DevelopersCO",
-            description:
-                "Built responsive web apps with React, TypeScript and JavaScript.",
-        },
-    ];
-
-    const education = [
-        {
-            period: "2024–28",
-            title: "Computer Science & AI",
-            company: "V. N. Karazin Kharkiv National University",
-        },
-        {
-            period: "2025–26",
-            title: "Level 1 English FS & Maths",
-            company: "Chesterfield College",
-        },
-        {
-            period: "2023",
-            title: "Markup Development",
-            company: "SourceIT",
-        },
-    ];
-
     return (
         <div className="space-y-8 text-[#E9D8C8]">
             <section>
@@ -41,7 +41,9 @@ function Experience() {
                                 {item.period}
                             </span>
 
-                            <div>
+                            <div className="relative pl-4">
+                                <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-[#FF5C8D]" />
+
                                 <h3 className="text-base font-bold leading-tight text-white">
                                     {item.title}
                                 </h3>
@@ -73,7 +75,9 @@ function Experience() {
                                 {item.period}
                             </span>
 
-                            <div>
+                            <div className="relative pl-4">
+                                <span className="absolute left-0 top-2 h-1.5 w-1.5 rounded-full bg-[#FF5C8D]" />
+
                                 <h3 className="text-base font-bold leading-tight text-white">
                                     {item.title}
                                 </h3>
