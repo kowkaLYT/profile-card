@@ -1,16 +1,48 @@
-# React + Vite
+# Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal profile card built with React, Vite and Tailwind CSS.
 
-Currently, two official plugins are available:
+I wanted to make something simple but still interesting, so I added interactive tabs, responsive design and a custom animated background.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<img width="505" height="596" alt="image" src="https://github.com/user-attachments/assets/9749700f-5b8d-4bbf-aca1-aafeda46f50c" />
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- About, Experience and Contact tabs
+- Responsive design for desktop and mobile
+- Social media links
+- Email contact button
+- Custom animated SVG background
+- Smooth transitions and hover effects
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- Vite
+- Tailwind CSS
+- React Icons
+- SVG
+
+## 📁 Structure
+
+```text
+src/
+├── assets/
+│   └── img-profile.png
+├── components/
+│   ├── About.jsx
+│   ├── Contacts.jsx
+│   ├── Experience.jsx
+│   ├── PitchBackground.jsx
+│   ├── ProfileCard.jsx
+│   └── ProfileTabs.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+
+## 🌐 Live Demo
+
+[View the live website](https://profile-card-dusky-pi.vercel.app/)
